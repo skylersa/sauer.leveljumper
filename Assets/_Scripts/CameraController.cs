@@ -9,6 +9,6 @@ public class CameraController : MonoBehaviour
 	void Update ()
 	{
 		transform.position = new Vector3 (player.position.x, player.position.y, transform.position.z);
-		transform.rotation = Quaternion.FromToRotation (Vector3.up, (Vector2)Input.acceleration);
+		transform.rotation = Quaternion.FromToRotation ((Vector2)Input.acceleration, Vector3.down);
 	}
 }
